@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2024-08-20 09:15:26.730526",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "library_transaction_section",
+  "article",
+  "library_member",
+  "type",
+  "date_of_transactions",
+  "route",
+  "published",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "library_transaction_section",
+   "fieldtype": "Section Break",
+   "label": "Library Transaction"
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Link",
+   "label": "Article",
+   "options": "Article"
+  },
+  {
+   "fieldname": "library_member",
+   "fieldtype": "Link",
+   "label": "Library Member",
+   "options": "Library Member"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "issue\nreturn"
+  },
+  {
+   "fieldname": "date_of_transactions",
+   "fieldtype": "Date",
+   "label": "Date of Transactions"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Transaction",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-22 00:55:18.427787",
+ "modified_by": "Administrator",
+ "module": "Tesserlink",
+ "name": "Library Transaction",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "transaction",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_seen": 1,
+ "track_views": 1
+}
